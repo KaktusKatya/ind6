@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екатерина Жуковская - Web Designer & UI/UX Creator</title>
+    <script>document.documentElement.classList.add('js')</script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Unbounded:wght@700;900&family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Caveat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+    <div class="s-progress" id="progress"></div>
+
+    <header class="site-header" id="site-header">
+        <a href="#top" class="logo">E.ZH</a>
+        <nav class="main-nav">
+            <a href="#top">Главная</a>
+            <a href="#about">Обо мне</a>
+            <a href="#achievements">Достижения</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <div class="header-right">
+            <span class="status-tag">AVAILABLE FOR FREELANCE</span>
+            <span class="status-dot"></span>
+        </div>
+    </header>
+
+    <!-- =========================================================
+         СЕКЦИЯ 1: HERO
+         ========================================================= -->
+    <main class="hero">
+        <div class="bg-text" aria-hidden="true">
+            <svg viewBox="0 0 1000 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="250" textLength="1000" lengthAdjust="spacingAndGlyphs">DESIGNER</text>
+            </svg>
+        </div>
+
+        <div class="portrait-container">
+            <!-- ФОТО ГЛАВНОЕ: портрет без фона (PNG), файл sticker.jpg -->
+            <img src="sticker.jpg" alt="Екатерина Жуковская" class="portrait-img" id="main-portrait">
+        </div>
+
+        <div class="hero-content">
+            <p class="greeting">Привет, я</p>
+            <h1 class="hero-title" id="main-name">ЕКАТЕРИНА<br>ЖУКОВСКАЯ</h1>
+            <p class="hero-role">WEB DESIGNER & UI/UX CREATOR</p>
+            <p class="hero-desc">
+                Создаю современный дизайн, сочетая эстетику, продуманный UX и внимание к деталям.
+            </p>
+            <div class="bottom-actions">
+                <a href="#contact" class="cta-btn">Связаться со мной</a>
+            </div>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">ГОДА<br>ОПЫТА</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">ПРОЕКТОВ<br>ЗАВЕРШЕНО</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">СЧАСТЛИВЫХ<br>КЛИЕНТОВ</span>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- БЕГУЩАЯ СТРОКА -->
+    <div class="s-marquee" aria-hidden="true">
+        <div class="s-marquee-track">
+            <span>UI/UX ★ WEB DESIGN ★ BRANDING ★ FIGMA ★ UI/UX ★ WEB DESIGN ★ BRANDING ★ FIGMA ★ </span>
+            <span>UI/UX ★ WEB DESIGN ★ BRANDING ★ FIGMA ★ UI/UX ★ WEB DESIGN ★ BRANDING ★ FIGMA ★ </span>
+        </div>
+    </div>
+
+    <!-- =========================================================
+         СЕКЦИЯ 2: ДАВАЙ ЗНАКОМИТЬСЯ
+         ========================================================= -->
+    <section class="s-about" id="about">
+        <span class="s-star st1" aria-hidden="true">✦</span>
+        <span class="s-star st2" aria-hidden="true">✦</span>
+        <span class="s-star st3" aria-hidden="true">★</span>
+        <!-- Вращающийся штамп -->
+        <svg class="s-stamp" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circ" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0"/></defs>
+            <text><textPath href="#circ" textLength="440" lengthAdjust="spacing">DESIGN ★ WITH ★ ATTITUDE ★</textPath></text>
+            <text x="100" y="118" text-anchor="middle" class="stamp-core">✦</text>
+        </svg>
+        <div class="s-container">
+            <h2 class="s-big-title reveal">ДАВАЙ<br>ЗНАКОМИТЬСЯ</h2>
+
+            <div class="s-about-grid">
+                <div class="s-photos">
+                    <div class="s-vinyl" aria-hidden="true"></div>
+                    <figure class="s-polaroid s-pol-1 reveal">
+                        <span class="s-tape"></span>
+                        <!-- ФОТО 1: детское фото, вертикальное, ~600×750 px. Назови файл child.jpg -->
+                        <img src="ekat1.jpg" alt="Маленькая Екатерина">
+                        <figcaption>рисовала на обоях и резала мамины журналы</figcaption>
+                    </figure>
+                    <figure class="s-polaroid s-pol-2 reveal" style="--d:.25s">
+                        <span class="s-tape"></span>
+                        <!-- ФОТО 2: фото сейчас, вертикальное, ~600×750 px. Назови файл now.jpg -->
+                        <img src="ekat_now.jpg" alt="Екатерина сейчас">
+                        <figcaption>теперь рисую в Figma</figcaption>
+                    </figure>
+                </div>
+
+                <div class="s-about-text reveal" style="--d:.15s">
+                    <p class="s-lead">Меня зовут Екатерина. Я делаю сайты, на которые невозможно не посмотреть.</p>
+                    <p>В детстве я рисовала фломастерами на обоях. Сейчас — в Figma, а мои «обои» открывают тысячи людей каждый день.</p>
+                    <p>Мой стиль — высокая мода плюс жёсткая бизнес-логика. Красивый сайт — это инструмент, который приводит клиентов.</p>
+                    <ul class="s-tags">
+                        <li>Figma</li><li>UI/UX</li><li>Брендинг</li><li>Лендинги</li><li>Прототипы</li>
+                    </ul>
+                    <a href="#achievements" class="s-btn s-btn-dark">Смотреть работы</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+     НОВЫЙ БЛОК «МОЙ ПУТЬ» (таймлайн)
+     Вставь ЦЕЛИКОМ после секции «Давай знакомиться» (после её </section>)
+     и перед блоком «КАК Я РАБОТАЮ»
+     ============================================================ -->
+    <section class="s-path" id="path">
+        <span class="s-star st13" aria-hidden="true">✦</span>
+        <span class="s-star st14" aria-hidden="true">★</span>
+        <div class="s-container">
+            <h2 class="s-big-title s-title-dark reveal">МОЙ <span class="s-outline">ПУТЬ</span></h2>
+
+            <div class="s-timeline">
+                <div class="s-tl-item reveal">
+                    <div class="s-tl-card">
+                        <div class="s-tl-year">2021</div>
+                        <h3>Старт</h3>
+                        <p>Прошла курс Art Direction и нарисовала первые макеты сайтов для друзей. Именно тогда поняла, что дизайн — это моё.</p>
+                    </div>
+                    <div class="s-tl-node" aria-hidden="true">✦</div>
+                    <div class="s-tl-spacer"></div>
+                </div>
+
+                <div class="s-tl-item reveal">
+                    <div class="s-tl-card">
+                        <div class="s-tl-year">2022</div>
+                        <h3>Первые клиенты</h3>
+                        <p>Закончила Web Design Pro. Появились первые заказы, среди них редизайн Fashion Store.</p>
+                    </div>
+                    <div class="s-tl-node" aria-hidden="true">✦</div>
+                    <div class="s-tl-spacer"></div>
+                </div>
+
+                <div class="s-tl-item reveal">
+                    <div class="s-tl-card">
+                        <div class="s-tl-year">2023</div>
+                        <h3>Уровень UI/UX</h3>
+                        <p>Получила сертификат UI/UX. Запустила Aura Beauty и приложение Daily Planner.</p>
+                    </div>
+                    <div class="s-tl-node" aria-hidden="true">✦</div>
+                    <div class="s-tl-spacer"></div>
+                </div>
+
+                <div class="s-tl-item reveal">
+                    <div class="s-tl-card">
+                        <div class="s-tl-year">2024</div>
+                        <h3>25+ клиентов</h3>
+                        <p>Собрала постоянных клиентов, выстроила свой процесс работы и фирменный стиль в дизайне.</p>
+                    </div>
+                    <div class="s-tl-node" aria-hidden="true">✦</div>
+                    <div class="s-tl-spacer"></div>
+                </div>
+
+                <div class="s-tl-item s-tl-now reveal">
+                    <div class="s-tl-card">
+                        <div class="s-tl-year">СЕЙЧАС</div>
+                        <h3>50+ проектов</h3>
+                        <p>Продолжаю учиться, пробую новое и беру проекты, от которых горят глаза. Следующий, возможно, твой.</p>
+                    </div>
+                    <div class="s-tl-node" aria-hidden="true">★</div>
+                    <div class="s-tl-spacer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================
+     НОВЫЙ БЛОК «КАК Я РАБОТАЮ»
+    
+     ============================================================ -->
+    <section class="s-process" id="process">
+        <span class="s-star st7" aria-hidden="true">✦</span>
+        <span class="s-star st8" aria-hidden="true">★</span>
+        <div class="s-sticker" aria-hidden="true">ПЕРВЫЙ<br>СОЗВОН<br>БЕСПЛАТНО</div>
+
+        <div class="s-container">
+            <h2 class="s-big-title reveal">КАК Я <span class="s-outline">РАБОТАЮ</span></h2>
+
+            <div class="s-steps">
+                <article class="s-step reveal">
+                    <div class="s-step-num">01</div>
+                    <h3>Знакомство</h3>
+                    <p>Созвон на 30 минут: разбираем цели, аудиторию и сайты, которые вам нравятся.</p>
+                </article>
+                <article class="s-step reveal" style="--d:.15s">
+                    <div class="s-step-num">02</div>
+                    <h3>Концепт</h3>
+                    <p>Собираю мудборд, подбираю шрифты и палитру, показываю 2–3 направления на выбор.</p>
+                </article>
+                <article class="s-step reveal" style="--d:.3s">
+                    <div class="s-step-num">03</div>
+                    <h3>Дизайн</h3>
+                    <p>Рисую интерфейс в Figma для десктопа, планшета и телефона. Делаю кликабельный прототип.</p>
+                </article>
+                <article class="s-step reveal" style="--d:.45s">
+                    <div class="s-step-num">04</div>
+                    <h3>Запуск</h3>
+                    <p>Передаю макеты разработчику, слежу за вёрсткой и помогаю выпустить сайт.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
+         СЕКЦИЯ 3: МОИ ДОСТИЖЕНИЯ (карточки на Flexbox)
+         ========================================================= -->
+    <section class="s-ach" id="achievements">
+        <span class="s-star st4" aria-hidden="true">✦</span>
+        <span class="s-star st5" aria-hidden="true">★</span>
+        <div class="s-container">
+            <h2 class="s-big-title s-title-dark reveal">МОИ <span class="s-outline">ДОСТИЖЕНИЯ</span></h2>
+
+            <div class="s-cards">
+                <article class="s-card reveal" style="--d:0.00s" tabindex="0" aria-label="Fashion Store Redesign">
+                    <div class="s-card-inner">
+                        <div class="s-front">
+                            <span class="s-pin"></span>
+                            <div class="s-card-img">
+                                <!-- ФОТО 3: скриншот/обложка проекта, ~800×600 px. Файл ach-1.jpg -->
+                                <img src="fash.jpg" alt="Fashion Store Redesign">
+            
+                            </div>
+                            <div class="s-card-body">
+                                <h3>Fashion Store Redesign</h3>
+                                <p>Переделала интерфейс магазина одежды: больше покупок, меньше отказов.</p>
+                                <button type="button" class="s-btn s-flip">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="s-back">
+                            <h3>Fashion Store Redesign</h3>
+                            <dl>
+                                <dt>Задача</dt><dd>Устаревший дизайн, высокий процент отказов и сложная навигация.</dd>
+                                <dt>Решение</dt><dd>Чистый минималистичный интерфейс, крупная типографика, интуитивный поиск и простая корзина.</dd>
+                                <dt>Результат</dt><dd>Конверсия в покупку выросла на 34%, отказы сократились вдвое.</dd>
+                            </dl>
+                            <button type="button" class="s-btn s-flip">Назад</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="s-card reveal" style="--d:0.15s" tabindex="0" aria-label=" Beauty">
+                    <div class="s-card-inner">
+                        <div class="s-front">
+                            <span class="s-pin"></span>
+                            <div class="s-card-img">
+                                <!-- ФОТО 4: скриншот/обложка проекта, ~800×600 px. Файл ach-2.jpg -->
+                                <img src="buti.jpg" alt=" Beauty">
+                                
+                            </div>
+                            <div class="s-card-body">
+                                <h3>Aura Beauty</h3>
+                                <p>Лендинг для запуска новой линейки косметики.</p>
+                                <button type="button" class="s-btn s-flip">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="s-back">
+                            <h3>Aura Beauty</h3>
+                            <dl>
+                                <dt>Задача</dt><dd>Запуск косметики: сайт должен мгновенно передавать премиальность бренда.</dd>
+                                <dt>Решение</dt><dd>Иммерсивный лендинг с плавными анимациями, глубокими цветами и акцентом на продукт.</dd>
+                                <dt>Результат</dt><dd>Первая партия распродана за 48 часов.</dd>
+                            </dl>
+                            <button type="button" class="s-btn s-flip">Назад</button>
+                        </div>
+                    </div>
+                </article>
+
+                                <article class="s-card reveal" style="--d:0.30s" tabindex="0" aria-label="Daily Planner App">
+                    <div class="s-card-inner">
+                        <div class="s-front">
+                            <span class="s-pin"></span>
+                            <div class="s-card-img">
+                                <!-- ФОТО 5: скриншот/обложка проекта, ~800×600 px. Файл ach-3.jpg -->
+                                <img src="dali.jpg" alt="Daily Planner App">
+                                
+                            </div>
+                            <div class="s-card-body">
+                                <h3>Daily Planner App</h3>
+                                <p>Дизайн приложения для отслеживания планов на день и управления задачами.</p>
+                                <button type="button" class="s-btn s-flip">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="s-back">
+                            <h3>Daily Planner App</h3>
+                            <dl>
+                                <dt>Задача</dt><dd>Пользователи терялись в сложных списках задач и забывали о важных делах.</dd>
+                                <dt>Решение</dt><dd>Создала интуитивный интерфейс с виджетами, таймлайном и умными напоминаниями.</dd>
+                                <dt>Результат</dt><dd>Вовлеченность выросла на 40%, пользователи стали выполнять на 30% больше задач.</dd>
+                            </dl>
+                            <button type="button" class="s-btn s-flip">Назад</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Сертификаты -->
+            <div class="s-certs">
+                <div class="s-cert reveal">
+                    <!-- ФОТО 6: фото сертификата, ~500×350 px. Файл cert-1.jpg -->
+                    <img src="UXUI.jpg" alt="Сертификат UI/UX"><b>CERTIFIED UI/UX · 2023</b>
+                </div>
+                <div class="s-cert reveal">
+                    <!-- ФОТО 7: фото сертификата. Файл cert-2.jpg -->
+                    <img src="ser2.jpg" alt="Сертификат Web Design"><b>WEB DESIGN PRO · 2022</b>
+                </div>
+                <div class="s-cert reveal">
+                    <!-- ФОТО 8: фото сертификата. Файл cert-3.jpg -->
+                    <img src="ser3.jpg" alt="Сертификат Art Direction"><b>ART DIRECTION · 2021</b>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================
+     НОВЫЙ БЛОК «ОТЗЫВЫ»
+     Вставь ЦЕЛИКОМ между секцией achievements (после её </section>)
+     и секцией контактов (перед комментарием «СЕКЦИЯ 4»)
+     ============================================================ -->
+    <section class="s-reviews" id="reviews">
+        <span class="s-star st9" aria-hidden="true">✦</span>
+        <span class="s-star st10" aria-hidden="true">★</span>
+        <div class="s-rating-badge" aria-hidden="true">5.0<small>★ СРЕДНЯЯ<br>ОЦЕНКА</small></div>
+
+        <div class="s-container">
+            <h2 class="s-big-title reveal">ЧТО ГОВОРЯТ<br><span class="s-outline-dark">КЛИЕНТЫ</span></h2>
+
+            <div class="s-reviews-row">
+                <article class="s-review-card reveal" style="--d:0.00s; --rot:-2.5deg">
+                    <div class="s-review">
+                        <span class="s-clip" aria-hidden="true"></span>
+                        <div class="s-quote" aria-hidden="true">“</div>
+                        <div class="s-rating" aria-label="5 из 5">★★★★★</div>
+                        <p>Екатерина не просто дизайнер, а стратег. Она чувствует бренд и заставляет сайт дышать. Мы получили не картинку, а инструмент, который приносит деньги.</p>
+                        <div class="s-author">
+                            <!-- АВАТАР: силуэт нарисован кодом, фото не нужно -->
+                            <svg class="s-avatar" viewBox="0 0 64 64" aria-hidden="true"><path d="M19 28c0-9 6-15 13-15s13 6 13 15v14H19z"/><circle cx="32" cy="26" r="11"/><path d="M10 64c0-15 9-22 22-22s22 7 22 22z"/></svg>
+                            <div><strong>Анна Смирнова</strong><span>Основатель бренда одежды</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="s-review-card reveal" style="--d:0.15s; --rot:1.5deg">
+                    <div class="s-review">
+                        <span class="s-clip" aria-hidden="true"></span>
+                        <div class="s-quote" aria-hidden="true">“</div>
+                        <div class="s-rating" aria-label="5 из 5">★★★★★</div>
+                        <p>Самый крутой вайб в работе. Дедлайны соблюдены, каждый пиксель на месте. Я впервые не переделывал макеты, а просто нажал «согласовать».</p>
+                        <div class="s-author">
+                            <!-- АВАТАР: силуэт нарисован кодом, фото не нужно -->
+                            <svg class="s-avatar" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="26" r="11"/><path d="M10 64c0-15 9-22 22-22s22 7 22 22z"/></svg>
+                            <div><strong>Дмитрий К.</strong><span>CEO digital-агентства</span></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="s-review-card reveal" style="--d:0.30s; --rot:-1.2deg">
+                    <div class="s-review">
+                        <span class="s-clip" aria-hidden="true"></span>
+                        <div class="s-quote" aria-hidden="true">“</div>
+                        <div class="s-rating" aria-label="5 из 5">★★★★★</div>
+                        <p>Работать с Екатериной легко. Она быстро поняла наши боли и предложила решение, о котором мы даже не думали. Продажи выросли, а нервы в порядке.</p>
+                        <div class="s-author">
+                            <!-- АВАТАР: силуэт нарисован кодом, фото не нужно -->
+                            <svg class="s-avatar" viewBox="0 0 64 64" aria-hidden="true"><path d="M20 22c0-7 5-11 12-11s12 4 12 11v12H20z"/><circle cx="32" cy="26" r="11"/><path d="M10 64c0-15 9-22 22-22s22 7 22 22z"/></svg>
+                            <div><strong>Марина В.</strong><span>Маркетинг-директор</span></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+   
+    
+<!-- ============================================================
+     БЛОК «ТЕХНОЛОГИИ, КОТОРЫМИ Я ВЛАДЕЮ» — коллекционные карточки
+     Замени прежнюю версию целиком (от <section class="s-tech"> до его </section>)
+     ============================================================ -->
+    <section class="s-tech" id="tech">
+        <span class="s-star st11" aria-hidden="true">✦</span>
+        <span class="s-star st12" aria-hidden="true">★</span>
+        <div class="s-tech-sticker" aria-hidden="true">TECH<br>STACK<br>CHECK ✓</div>
+
+        <div class="s-container">
+            <h2 class="s-big-title reveal">ТЕХНОЛОГИИ, <span class="s-outline">КОТОРЫМИ Я ВЛАДЕЮ</span></h2>
+
+            <!-- Бустер-пак -->
+            <div class="s-pack-zone reveal" id="pack-zone">
+                <div class="s-pack-wrap">
+                    <button type="button" class="s-pack" id="pack" aria-label="Открыть пак с карточками">
+                        <span class="s-pack-star">✦</span>
+                        <span class="s-pack-title">TECH<br>PACK</span>
+                        <span class="s-pack-vol">vol.1 · 7 карт</span>
+                        <span class="s-pack-hint">нажми, чтобы открыть</span>
+                    </button>
+                </div>
+                <div class="s-pack-info">
+                    <span class="s-tech-count"><b id="tc-count">0</b> / 7 открыто</span>
+                    <button type="button" class="s-act" id="tc-all">показать все</button>
+                    <button type="button" class="s-act" id="tc-reset" hidden>🔄 заново</button>
+                </div>
+            </div>
+
+            <div class="s-tech-grid" id="tech-grid">
+                <div class="s-tc r-legend reveal" style="--d:0.00s">
+                    <div class="s-tc-inner">
+                        <div class="s-tc-front">
+                            <div class="s-tc-face">
+                                <div class="s-tc-head"><h3>Figma</h3><span class="s-tc-rar">legendary</span></div>
+                                <div class="s-tc-art" aria-hidden="true">
+                                    <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/figma.svg" alt="Figma" style="max-width: 80px; max-height: 80px; width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;">
+                                </div>
+                                <div class="s-tc-type">дизайн · веб</div>
+                                <p>Мой дом. Макеты, прототипы и дизайн-системы: всё рождается здесь.</p>
+                                <div class="s-tc-stats"><div class="s-tc-stat"><span>скорость</span><i style="--v:9"></i><b>9</b></div><div class="s-tc-stat"><span>любовь</span><i style="--v:10"></i><b>10</b></div><div class="s-tc-stat"><span>страдание</span><i style="--v:2"></i><b>2</b></div></div>
+                                <div class="s-tc-foot"><span>№ 01/07</span><span>✦ tech pack vol.1</span></div>
+                            </div>
+                        </div>
+                        <div class="s-tc-back" aria-hidden="true"><span class="s-tc-star">✦</span><b>TECH</b></div>
+                    </div>
+                </div>
+
+                <div class="s-tc r-epic reveal" style="--d:0.07s">
+                    <div class="s-tc-inner">
+                        <div class="s-tc-front">
+                            <div class="s-tc-face">
+                                <div class="s-tc-head"><h3>Photoshop</h3><span class="s-tc-rar">epic</span></div>
+                                <div class="s-tc-art" aria-hidden="true">
+                                    <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/adobe-photoshop.svg" alt="Photoshop" style="max-width: 80px; max-height: 80px; width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;">
+                                </div>
+                                <div class="s-tc-type">дизайн</div>
+                                <p>Ретушь, коллажи и обложки. Когда нужно сделать красиво и смело.</p>
+                                <div class="s-tc-stats"><div class="s-tc-stat"><span>скорость</span><i style="--v:8"></i><b>8</b></div><div class="s-tc-stat"><span>любовь</span><i style="--v:9"></i><b>9</b></div><div class="s-tc-stat"><span>страдание</span><i style="--v:4"></i><b>4</b></div></div>
+                                <div class="s-tc-foot"><span>№ 02/07</span><span>✦ tech pack vol.1</span></div>
+                            </div>
+                        </div>
+                        <div class="s-tc-back" aria-hidden="true"><span class="s-tc-star">✦</span><b>TECH</b></div>
+                    </div>
+                </div>
+
+                <div class="s-tc r-epic reveal" style="--d:0.14s">
+                    <div class="s-tc-inner">
+                        <div class="s-tc-front">
+                            <div class="s-tc-face">
+                                <div class="s-tc-head"><h3>Illustrator</h3><span class="s-tc-rar">epic</span></div>
+                                <div class="s-tc-art" aria-hidden="true">
+                                    <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/adobe-illustrator.svg" alt="Illustrator" style="max-width: 80px; max-height: 80px; width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;">
+                                </div>
+                                <div class="s-tc-type">дизайн</div>
+                                <p>Логотипы, иконки и векторные стикеры, которые не теряют качество.</p>
+                                <div class="s-tc-stats"><div class="s-tc-stat"><span>скорость</span><i style="--v:7"></i><b>7</b></div><div class="s-tc-stat"><span>любовь</span><i style="--v:8"></i><b>8</b></div><div class="s-tc-stat"><span>страдание</span><i style="--v:5"></i><b>5</b></div></div>
+                                <div class="s-tc-foot"><span>№ 03/07</span><span>✦ tech pack vol.1</span></div>
+                            </div>
+                        </div>
+                        <div class="s-tc-back" aria-hidden="true"><span class="s-tc-star">✦</span><b>TECH</b></div>
+                    </div>
+                </div>
+
+                <!-- 4. ИСПРАВЛЕННАЯ HTML & CSS -->
+                <div class="s-tc r-rare reveal" style="--d:0.21s">
+                    <div class="s-tc-inner">
+                        <div class="s-tc-front">
+                            <div class="s-tc-face">
+                                <div class="s-tc-head"><h3>HTML & CSS</h3><span class="s-tc-rar">rare</span></div>
+                                <div class="s-tc-art" aria-hidden="true" style="display: flex; justify-content: center; align-items: center; gap: 15px; padding: 10px;">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" style="max-width: 45px; max-height: 45px; width: 100%; height: 100%; object-fit: contain;">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" style="max-width: 45px; max-height: 45px; width: 100%; height: 100%; object-fit: contain;">
+                                </div>
+                                <div class="s-tc-type">веб</div>
+                                <p>Верстаю на Flexbox и Grid. Могу сама собрать то, что нарисовала.</p>
+                                <div class="s-tc-stats"><div class="s-tc-stat"><span>скорость</span><i style="--v:8"></i><b>8</b></div><div class="s-tc-stat"><span>любовь</span><i style="--v:9"></i><b>9</b></div><div class="s-tc-stat"><span>страдание</span><i style="--v:6"></i><b>6</b></div></div>
+                                <div class="s-tc-foot"><span>№ 04/07</span><span>✦ tech pack vol.1</span></div>
+                            </div>
+                        </div>
+                        <div class="s-tc-back" aria-hidden="true"><span class="s-tc-star">✦</span><b>TECH</b></div>
+                    </div>
+                </div>
+
+                                <!-- 5. Tilda -->
+                <div class="s-tc r-rare reveal" style="--d:0.28s">
+                    <div class="s-tc-inner">
+                        <div class="s-tc-front">
+                            <div class="s-tc-face">
+                                <div class="s-tc-head"><h3>Tilda</h3><span class="s-tc-rar">rare</span></div>
+                                <div class="s-tc-art" aria-hidden="true">
+                                    <!-- Заменил ссылку на стабильный SVG-логотип -->
+                                    <img src="https://proicons.com/icon/598209.svg" alt="Tilda" style="max-width: 80px; max-height: 80px; width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;">
+                                </div>
+                                <div class="s-tc-type">веб</div>
+                                <p>Быстрые лендинги без кода, когда проекту нужен запуск за неделю.</p>
+                                <div class="s-tc-stats"><div class="s-tc-stat"><span>скорость</span><i style="--v:10"></i><b>10</b></div><div class="s-tc-stat"><span>любовь</span><i style="--v:6"></i><b>6</b></div><div class="s-tc-stat"><span>страдание</span><i style="--v:1"></i><b>1</b></div></div>
+                                <div class="s-tc-foot"><span>№ 05/07</span><span>✦ tech pack vol.1</span></div>
+                            </div>
+                        </div>
+                        <div class="s-tc-back" aria-hidden="true"><span class="s-tc-star">✦</span><b>TECH</b></div>
+                    </div>
+                </div>
+
+                <!-- 6. ИСПРАВЛЕННЫЙ Webflow -->
+                <div class="s-tc r-rare reveal" style="--d:0.35s">
+                    <div class="s-tc-inner">
+                        <div class="s-tc-front">
+                            <div class="s-tc-face">
+                                <div class="s-tc-head"><h3>Webflow</h3><span class="s-tc-rar">rare</span></div>
+                                <div class="s-tc-art" aria-hidden="true">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webflow/webflow-original.svg" alt="Webflow" style="max-width: 80px; max-height: 80px; width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;">
+                                </div>
+                                <div class="s-tc-type">веб</div>
+                                <p>Сайты с анимациями и CMS, где дизайн живёт без компромиссов.</p>
+                                <div class="s-tc-stats"><div class="s-tc-stat"><span>скорость</span><i style="--v:7"></i><b>7</b></div><div class="s-tc-stat"><span>любовь</span><i style="--v:7"></i><b>7</b></div><div class="s-tc-stat"><span>страдание</span><i style="--v:4"></i><b>4</b></div></div>
+                                <div class="s-tc-foot"><span>№ 06/07</span><span>✦ tech pack vol.1</span></div>
+                            </div>
+                        </div>
+                        <div class="s-tc-back" aria-hidden="true"><span class="s-tc-star">✦</span><b>TECH</b></div>
+                    </div>
+                </div>
+
+                <div class="s-tc r-rare reveal" style="--d:0.42s">
+                    <div class="s-tc-inner">
+                        <div class="s-tc-front">
+                            <div class="s-tc-face">
+                                <div class="s-tc-head"><h3>After Effects</h3><span class="s-tc-rar">rare</span></div>
+                                <div class="s-tc-art" aria-hidden="true">
+                                    <img src="https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/adobe-after-effects.svg" alt="After Effects" style="max-width: 80px; max-height: 80px; width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;">
+                                </div>
+                                <div class="s-tc-type">анимация</div>
+                                <p>Микроанимации и motion-вставки, которые оживляют интерфейс.</p>
+                                <div class="s-tc-stats"><div class="s-tc-stat"><span>скорость</span><i style="--v:5"></i><b>5</b></div><div class="s-tc-stat"><span>любовь</span><i style="--v:8"></i><b>8</b></div><div class="s-tc-stat"><span>страдание</span><i style="--v:8"></i><b>8</b></div></div>
+                                <div class="s-tc-foot"><span>№ 07/07</span><span>✦ tech pack vol.1</span></div>
+                            </div>
+                        </div>
+                        <div class="s-tc-back" aria-hidden="true"><span class="s-tc-star">✦</span><b>TECH</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                           
+                  
+
+    <!-- =========================================================
+         СЕКЦИЯ 4: КОНТАКТЫ
+         ========================================================= -->
+    <section class="s-contact" id="contact">
+        <div class="s-container">
+            <span class="s-star st6" aria-hidden="true">✦</span>
+            <h2 class="s-huge reveal">LET’S WORK<br><span>TOGETHER</span></h2>
+            <p class="s-contact-text reveal">Есть проект? Напиши мне — отвечу в течение дня.</p>
+            <div class="s-contact-links reveal">
+                <a href="mailto:hello@example.com" class="s-btn">hello@example.com</a>
+                <a href="https://t.me/" class="s-btn s-btn-ghost">Telegram</a>
+                <a href="https://www.instagram.com/__stitch_k?dlrf=MXB5M2ExbnZodTR0cg%3D%3D&utm_source=qr" class="s-btn s-btn-ghost">Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <a href="#top" class="s-top" id="to-top" aria-label="Наверх">↑</a>
+
+    <script>
+    // Плавное появление
+    const io = new IntersectionObserver(es => es.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+            setTimeout(() => e.target.classList.remove('reveal', 'in'), 2000);
+        }
+    }), { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Переворот карточек
+    document.querySelectorAll('.s-card').forEach(card => {
+        card.querySelectorAll('.s-flip').forEach(b => b.addEventListener('click', e => {
+            e.stopPropagation(); card.classList.toggle('flipped');
+        }));
+    });
+
+    // Шапка, кнопка «наверх», полоса прокрутки
+    const hdr = document.getElementById('site-header'), topBtn = document.getElementById('to-top'), bar = document.getElementById('progress');
+    addEventListener('scroll', () => {
+        const y = scrollY;
+        hdr.classList.toggle('scrolled', y > 40);
+        topBtn.classList.toggle('show', y > 600);
+        bar.style.width = (y / (document.documentElement.scrollHeight - innerHeight) * 100) + '%';
+    }, { passive: true });
+   // ===== Технологии: бустер-пак и коллекционные карточки =====
+
+const tcCards = [...document.querySelectorAll('.s-tc')];
+const pack = document.getElementById('pack');
+const packWrap = pack.parentElement;
+const packZone = document.getElementById('pack-zone');
+const tcCount = document.getElementById('tc-count');
+const btnAll = document.getElementById('tc-all');
+const btnReset = document.getElementById('tc-reset');
+const fineMouse = matchMedia('(hover: hover)').matches;
+
+function sparks(x, y) {
+    ['✦', '★', '✧', '✦', '★', '✧', '✦', '★', '✧', '✦', '★', '✧'].forEach((m, i) => {
+        const s = document.createElement('span');
+        s.className = 's-spark'; s.textContent = m;
+        s.style.left = x + 'px'; s.style.top = y + 'px';
+        s.style.color = ['#d90025', '#050505', '#ffb800'][i % 3];
+        const a = Math.random() * Math.PI * 2, d = 70 + Math.random() * 80;
+        s.style.setProperty('--dx', Math.cos(a) * d + 'px');
+        s.style.setProperty('--dy', Math.sin(a) * d + 'px');
+        document.body.appendChild(s);
+        setTimeout(() => s.remove(), 900);
+    });
+}
+function updateCount() {
+    tcCount.textContent = tcCards.filter(c => c.classList.contains('is-open')).length;
+}
+function openCard(card) {
+    if (card.classList.contains('is-open')) return;
+    card.classList.add('is-open');
+    updateCount();
+    if (card.classList.contains('r-legend')) {
+        setTimeout(() => { const r = card.getBoundingClientRect(); sparks(r.left + r.width / 2, r.top + r.height / 2); }, 450);
+    }
+}
+function openAll(delay = 260) {
+    tcCards.forEach((c, i) => setTimeout(() => openCard(c), i * delay));
+    setTimeout(() => { packZone.classList.add('is-done'); btnAll.hidden = true; btnReset.hidden = false; }, tcCards.length * delay + 300);
+}
+
+// нажатие на пак
+pack.addEventListener('click', () => {
+    pack.classList.add('is-shaking');
+    setTimeout(() => {
+        const r = pack.getBoundingClientRect(); sparks(r.left + r.width / 2, r.top + r.height / 2);
+        packWrap.classList.add('is-gone');
+        setTimeout(() => { packWrap.style.display = 'none'; openAll(); }, 450);
+    }, 600);
+});
+// «показать все» сразу
+btnAll.addEventListener('click', () => { packWrap.style.display = 'none'; openAll(80); });
+// собрать заново
+btnReset.addEventListener('click', () => {
+    tcCards.forEach(c => c.classList.remove('is-open'));
+    updateCount();
+    packZone.classList.remove('is-done');
+    pack.classList.remove('is-shaking'); packWrap.classList.remove('is-gone'); packWrap.style.display = '';
+    btnAll.hidden = false; btnReset.hidden = true;
+});
+
+tcCards.forEach(card => {
+    // клик по закрытой карточке открывает её
+    card.addEventListener('click', () => openCard(card));
+    // наклон и голографический блеск за курсором
+    if (fineMouse) {
+        card.addEventListener('pointermove', e => {
+            if (!card.classList.contains('is-open')) return;
+            const r = card.getBoundingClientRect();
+            const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+            card.style.setProperty('--mx', x * 100 + '%'); card.style.setProperty('--my', y * 100 + '%');
+            card.style.transform = `perspective(900px) rotateY(${(x - .5) * 22}deg) rotateX(${(.5 - y) * 22}deg) scale(1.05)`;
+        });
+        card.addEventListener('pointerleave', () => { card.style.transform = ''; });
+    }
+});
+    </script>
+</body>
+</html>
